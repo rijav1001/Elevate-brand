@@ -23,16 +23,16 @@ const Form = () => {
   };
 
   return (
-    <section className="py-16 text-center">
-      <h2 className="text-3xl font-semibold">Sign Up</h2>
-      <form onSubmit={handleSubmit} className="mt-8 max-w-md mx-auto space-y-4">
+    <section className="py-5 text-center">
+      <h2 className="h3 fw-semibold">Sign Up</h2>
+      <form onSubmit={handleSubmit} className="mt-4 mx-auto w-50">
         <input
           type="text"
           name="name"
           placeholder="Your Name"
           value={formData.name}
           onChange={handleChange}
-          className="w-full p-3 border rounded-lg"
+          className="form-control mb-3"
           required
         />
         <input
@@ -41,14 +41,14 @@ const Form = () => {
           placeholder="Your Email"
           value={formData.email}
           onChange={handleChange}
-          className="w-full p-3 border rounded-lg"
+          className="form-control mb-3"
           required
         />
-        <select name="pricingPlan" value={formData.pricingPlan} onChange={handleChange} className="w-full p-3 border rounded-lg">
+        <select name="pricingPlan" value={formData.pricingPlan} onChange={handleChange} className="form-select mb-3">
           <option value="Monthly">Monthly</option>
           <option value="Annual">Annual</option>
         </select>
-        <button type="submit" className="w-full px-6 py-3 bg-blue-500 text-white rounded-lg">
+        <button type="submit" className="btn btn-primary w-100">
           Submit
         </button>
       </form>

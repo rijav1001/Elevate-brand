@@ -1,21 +1,25 @@
 const Pricing = () => {
-    return (
-      <section className="py-16 text-center bg-gray-100">
-        <h2 className="text-3xl font-semibold">Pricing Plans</h2>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="p-6 border rounded-lg bg-white">
-            <h3 className="text-xl font-semibold">Monthly Plan</h3>
-            <p className="mt-2 text-gray-600">$10/month</p>
-            <button className="mt-4 px-6 py-3 bg-blue-500 text-white rounded-lg">Choose Plan</button>
-          </div>
-          <div className="p-6 border rounded-lg bg-white">
-            <h3 className="text-xl font-semibold">Annual Plan</h3>
-            <p className="mt-2 text-gray-600">$100/year</p>
-            <button className="mt-4 px-6 py-3 bg-blue-500 text-white rounded-lg">Choose Plan</button>
+  return (
+    <section className="py-5 text-center bg-light">
+      <h2 className="h3 fw-semibold">Pricing Plans</h2>
+      <div className="mt-4 row row-cols-1 row-cols-md-2 g-4">
+        <div className="col">
+          <div className="p-4 border rounded bg-white">
+            <h3 className="h5 fw-semibold">Monthly Plan</h3>
+            <p className="mt-2 text-secondary">$10/month</p>
+            <button className="mt-3 btn btn-primary">Choose Plan</button>
           </div>
         </div>
-      </section>
-    );
+        <div className="col">
+          <div className="p-4 border rounded bg-white">
+            <h3 className="h5 fw-semibold">Annual Plan</h3>
+            <p className="mt-2 text-secondary">$100/year</p>
+            <button className="mt-3 btn btn-primary">Choose Plan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
-  
-export default Pricing;  
+
+export default Pricing;
